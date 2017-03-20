@@ -233,7 +233,7 @@ user_pref("javascript.use_us_english_locale",			true);
 
 // PREF: Do not submit invalid URIs entered in the address bar to the default search engine
 // http://kb.mozillazine.org/Keyword.enabled
-user_pref("keyword.enabled",					false);
+//user_pref("keyword.enabled",					false);
 
 // PREF: Don't trim HTTP off of URLs in the address bar.
 // https://bugzilla.mozilla.org/show_bug.cgi?id=665580
@@ -263,7 +263,7 @@ user_pref("security.mixed_content.block_active_content",	true);
 
 // PREF: Enforce Mixed Passive Content blocking (a.k.a. Mixed Display Content)
 // NOTICE: Enabling Mixed Display Content blocking can prevent images/styles... from loading properly when connection to the website is only partially secured
-user_pref("security.mixed_content.block_display_content",	true);
+//user_pref("security.mixed_content.block_display_content",	true);
 
 // PREF: Disable JAR from opening Unsafe File Types
 // http://kb.mozillazine.org/Network.jar.open-unsafe-types
@@ -515,8 +515,8 @@ user_pref("browser.uitour.enabled",				false);
 // https://support.mozilla.org/en-US/kb/tracking-protection-pbm
 // https://kontaxis.github.io/trackingprotectionfirefox/
 // https://feeding.cloud.geek.nz/posts/how-tracking-protection-works-in-firefox/
-user_pref("privacy.trackingprotection.enabled",			true);
-user_pref("privacy.trackingprotection.pbmode.enabled",		true);
+user_pref("privacy.trackingprotection.enabled",			false);
+user_pref("privacy.trackingprotection.pbmode.enabled",		false);
 
 // PREF: Enable contextual identity Containers feature (Firefox >= 52)
 // NOTICE: Containers are not available in Private Browsing mode
@@ -534,7 +534,7 @@ user_pref("privacy.resistFingerprinting",			true);
 // https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-2743
 // https://blog.mozilla.org/security/2015/08/06/firefox-exploit-found-in-the-wild/
 // https://www.mozilla.org/en-US/security/advisories/mfsa2015-69/
-user_pref("pdfjs.disabled",					true);
+//user_pref("pdfjs.disabled",					true);
 
 // PREF: Disable collection/sending of the health report (healthreport.sqlite*)
 // https://support.mozilla.org/en-US/kb/firefox-health-report-understand-your-browser-perf
@@ -592,8 +592,8 @@ user_pref("browser.safebrowsing.downloads.remote.enabled",	false);
 // PREF: Disable Pocket
 // https://support.mozilla.org/en-US/kb/save-web-pages-later-pocket-firefox
 // https://github.com/pyllyukko/user.js/issues/143
-user_pref("browser.pocket.enabled",				false);
-user_pref("extensions.pocket.enabled",				false);
+//user_pref("browser.pocket.enabled",				false);
+//user_pref("extensions.pocket.enabled",				false);
 
 // PREF: Disable SHIELD
 // https://support.mozilla.org/en-US/kb/shield
@@ -641,7 +641,7 @@ user_pref("browser.search.suggest.enabled",			false);
 // PREF: Disable "Show search suggestions in location bar results"
 user_pref("browser.urlbar.suggest.searches",			false);
 // PREF: When using the location bar, don't suggest URLs from browsing history
-user_pref("browser.urlbar.suggest.history",			false);
+//user_pref("browser.urlbar.suggest.history",			false);
 
 // PREF: Disable SSDP
 // https://bugzilla.mozilla.org/show_bug.cgi?id=1111967
@@ -650,7 +650,7 @@ user_pref("browser.casting.enabled",				false);
 // PREF: Disable automatic downloading of OpenH264 codec
 // https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connections#w_media-capabilities
 // https://andreasgal.com/2014/10/14/openh264-now-in-firefox/
-user_pref("media.gmp-gmpopenh264.enabled",			false);
+//user_pref("media.gmp-gmpopenh264.enabled",			false);
 user_pref("media.gmp-manager.url",				"");
 
 // PREF: Disable speculative pre-connections
@@ -710,7 +710,7 @@ user_pref("security.sri.enable",				true);
 // NOTICE: Spoofing referers breaks visualisation of 3rd-party sites on the Lightbeam addon
 // NOTICE: Spoofing referers disables CSRF protection on some login pages not implementing origin-header/cookie+token based CSRF protection
 // TODO: https://github.com/pyllyukko/user.js/issues/94, commented-out XOriginPolicy/XOriginTrimmingPolicy = 2 prefs
-user_pref("network.http.referer.spoofSource",			true);
+//user_pref("network.http.referer.spoofSource",			true);
 
 // PREF: Don't send referer headers when following links across different domains (disabled)
 // https://github.com/pyllyukko/user.js/issues/227
@@ -755,7 +755,7 @@ user_pref("network.cookie.thirdparty.sessionOnly",		true);
 // NOTICE: Private browsing breaks Kerberos authentication
 // NOTICE: Disables "Containers" functionality (see below)
 // NOTICE: "Always use private browsing mode" (browser.privatebrowsing.autostart) disables the possibility to use password manager: https://support.mozilla.org/en-US/kb/usernames-and-passwords-are-not-saved#w_private-browsing
-user_pref("browser.privatebrowsing.autostart",			true);
+//user_pref("browser.privatebrowsing.autostart",			true);
 
 // PREF: Do not download URLs for the offline cache
 // http://kb.mozillazine.org/Browser.cache.offline.enable
@@ -768,13 +768,13 @@ user_pref("browser.cache.offline.enable",			false);
 // NOTICE: Clearing open windows on Firefox exit causes 2 windows to open when Firefox starts https://bugzilla.mozilla.org/show_bug.cgi?id=1334945
 user_pref("privacy.sanitize.sanitizeOnShutdown",		true);
 user_pref("privacy.clearOnShutdown.cache",			true);
-user_pref("privacy.clearOnShutdown.cookies",			true);
-user_pref("privacy.clearOnShutdown.downloads",			true);
+user_pref("privacy.clearOnShutdown.cookies",			false);
+user_pref("privacy.clearOnShutdown.downloads",			false);
 user_pref("privacy.clearOnShutdown.formdata",			true);
-user_pref("privacy.clearOnShutdown.history",			true);
-user_pref("privacy.clearOnShutdown.offlineApps",		true);
-user_pref("privacy.clearOnShutdown.sessions",			true);
-user_pref("privacy.clearOnShutdown.openWindows",		true);
+user_pref("privacy.clearOnShutdown.history",			false);
+user_pref("privacy.clearOnShutdown.offlineApps",		false);
+user_pref("privacy.clearOnShutdown.sessions",			false);
+user_pref("privacy.clearOnShutdown.openWindows",		false);
 
 // PREF: Set time range to "Everything" as default in "Clear Recent History"
 user_pref("privacy.sanitize.timeSpan",				0);
@@ -789,11 +789,11 @@ user_pref("privacy.cpd.history",				true);
 user_pref("privacy.cpd.sessions",				true);
 
 // PREF: Don't remember browsing history
-user_pref("places.history.enabled",				false);
+//user_pref("places.history.enabled",				false);
 
 // PREF: Disable disk cache
 // http://kb.mozillazine.org/Browser.cache.disk.enable
-user_pref("browser.cache.disk.enable",				false);
+//user_pref("browser.cache.disk.enable",				false);
 
 // PREF: Disable memory cache (disabled)
 // http://kb.mozillazine.org/Browser.cache.memory.enable
@@ -802,7 +802,7 @@ user_pref("browser.cache.disk.enable",				false);
 // PREF: Disable Caching of SSL Pages
 // CIS Version 1.2.0 October 21st, 2011 2.5.8
 // http://kb.mozillazine.org/Browser.cache.disk_cache_ssl
-user_pref("browser.cache.disk_cache_ssl",			false);
+//user_pref("browser.cache.disk_cache_ssl",			false);
 
 // PREF: Disable download history
 // CIS Version 1.2.0 October 21st, 2011 2.5.5
@@ -810,7 +810,7 @@ user_pref("browser.download.manager.retention",			0);
 
 // PREF: Disable password manager
 // CIS Version 1.2.0 October 21st, 2011 2.5.2
-user_pref("signon.rememberSignons",				false);
+//user_pref("signon.rememberSignons",				false);
 
 // PREF: Disable form autofill, don't save information entered in web page forms and the Search Bar
 user_pref("browser.formfill.enable",				false);
@@ -826,7 +826,7 @@ user_pref("signon.autofillForms",				false);
 
 // PREF: Disable formless login capture
 // https://bugzilla.mozilla.org/show_bug.cgi?id=1166947
-user_pref("signon.formlessCapture.enabled",			false);
+//user_pref("signon.formlessCapture.enabled",			false);
 
 // PREF: When username/password autofill is enabled, still disable it on non-HTTPS sites
 // https://hg.mozilla.org/integration/mozilla-inbound/rev/f0d146fe7317
@@ -869,7 +869,7 @@ user_pref("browser.shell.shortcutFavicons",					false);
 
 // PREF: Disable bookmarks backups (default: 15)
 // http://kb.mozillazine.org/Browser.bookmarks.max_backups
-user_pref("browser.bookmarks.max_backups", 0);
+//user_pref("browser.bookmarks.max_backups", 0);
 
 /*******************************************************************************
  * SECTION: UI related                                                         *
@@ -937,24 +937,24 @@ user_pref("network.IDN_show_punycode",				true);
 
 // PREF: Disable inline autocomplete in URL bar
 // http://kb.mozillazine.org/Inline_autocomplete
-user_pref("browser.urlbar.autoFill",				false);
-user_pref("browser.urlbar.autoFill.typed",			false);
+//user_pref("browser.urlbar.autoFill",				false);
+//user_pref("browser.urlbar.autoFill.typed",			false);
 
 // PREF: Disable CSS :visited selectors
 // https://blog.mozilla.org/security/2010/03/31/plugging-the-css-history-leak/
 // https://dbaron.org/mozilla/visited-privacy
-user_pref("layout.css.visited_links_enabled",			false);
+//user_pref("layout.css.visited_links_enabled",			false);
 
 // PREF: Disable URL bar autocomplete and history/bookmarks suggestions dropdown
 // http://kb.mozillazine.org/Disabling_autocomplete_-_Firefox#Firefox_3.5
-user_pref("browser.urlbar.autocomplete.enabled",		false);
+//user_pref("browser.urlbar.autocomplete.enabled",		false);
 
 // PREF: Do not check if Firefox is the default browser
 user_pref("browser.shell.checkDefaultBrowser",			false);
 
 // PREF: When password manager is enabled, lock the password storage periodically
 // CIS Version 1.2.0 October 21st, 2011 2.5.3 Disable Prompting for Credential Storage
-user_pref("security.ask_for_password",				2);
+user_pref("security.ask_for_password",				0);
 
 // PREF: Lock the password storage every 1 minutes (default: 30)
 user_pref("security.password_lifetime",				1);
@@ -1162,3 +1162,27 @@ user_pref("security.ssl3.dhe_dss_camellia_256_sha",		false);
 // PREF: Fallbacks due compatibility reasons
 user_pref("security.ssl3.rsa_aes_256_sha",			true); // 0x35
 user_pref("security.ssl3.rsa_aes_128_sha",			true); // 0x2f
+
+/******************************************************************************
+ * SECTION: Personal preferences                                              *
+ ******************************************************************************/
+
+// PREF: Compact light theme
+user_pref("devtools.theme", "light");
+
+// PREF: Fonts
+user_pref("font.name.monospace.x-western", "PragmataPro");
+user_pref("font.name.sans-serif.x-western", "Fira Sans");
+user_pref("font.name.serif.x-western", "Charter");
+
+// PREF: show your windows and tabs from last time
+user_pref("browser.startup.page", 3);
+
+// PREF: Sync settings
+user_pref("services.sync.client.name", "gsec");
+user_pref("services.sync.engine.addons", false);
+user_pref("services.sync.engine.history", false);
+user_pref("services.sync.engine.prefs", false);
+
+// PREF: Hamburger menu items
+user_pref("browser.uiCustomization.state", "{\"placements\":{\"widget-overflow-fixed-list\":[\"https-everywhere_eff_org-browser-action\",\"cookieautodelete_kennydo_com-browser-action\",\"jid1-bofifl9vbdl2zq_jetpack-browser-action\",\"developer-button\"],\"nav-bar\":[\"back-button\",\"forward-button\",\"stop-reload-button\",\"urlbar-container\",\"downloads-button\",\"bookmarks-menu-button\",\"sync-button\",\"_testpilot-containers-browser-action\",\"_cde47992-8aa7-4206-9e98-680a2d20f798_-browser-action\",\"ublock0_raymondhill_net-browser-action\"],\"TabsToolbar\":[\"tabbrowser-tabs\",\"new-tab-button\",\"alltabs-button\"],\"PersonalToolbar\":[\"personal-bookmarks\"]},\"seen\":[\"_testpilot-containers-browser-action\",\"cookieautodelete_kennydo_com-browser-action\",\"https-everywhere_eff_org-browser-action\",\"jid1-bofifl9vbdl2zq_jetpack-browser-action\",\"ublock0_raymondhill_net-browser-action\",\"developer-button\",\"_cde47992-8aa7-4206-9e98-680a2d20f798_-browser-action\",\"feed-button\",\"_contain-facebook-browser-action\"],\"dirtyAreaCache\":[\"widget-overflow-fixed-list\",\"nav-bar\",\"TabsToolbar\",\"PersonalToolbar\"],\"currentVersion\":16,\"newElementCount\":14}");
