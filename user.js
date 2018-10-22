@@ -1171,9 +1171,9 @@ user_pref("security.ssl3.rsa_aes_128_sha",			true); // 0x2f
 user_pref("devtools.theme", "light");
 
 // PREF: Fonts
-user_pref("font.name.monospace.x-western", "PragmataPro");
+user_pref("font.name.monospace.x-western", "Iosevka");
 user_pref("font.name.sans-serif.x-western", "Fira Sans");
-user_pref("font.name.serif.x-western", "Charter");
+user_pref("font.name.serif.x-western", "Source Serif Pro");
 
 // PREF: show your windows and tabs from last time
 user_pref("browser.startup.page", 3);
