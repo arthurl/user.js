@@ -528,7 +528,7 @@ user_pref("privacy.userContext.enabled",			true);
 // https://bugzilla.mozilla.org/show_bug.cgi?id=1333933
 // https://wiki.mozilla.org/Security/Fingerprinting
 // NOTICE: RFP breaks some keyboard shortcuts used in certain websites (see #443)
-user_pref("privacy.resistFingerprinting",			true);
+user_pref("privacy.resistFingerprinting",			false);
 
 // PREF: Disable the built-in PDF viewer
 // https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-2743
@@ -737,7 +737,7 @@ user_pref("privacy.firstparty.isolate",				true);
 user_pref("network.cookie.thirdparty.sessionOnly",		true);
 
 // PREF: Spoof User-agent (disabled)
-//user_pref("general.useragent.override",				"Mozilla/5.0 (Windows NT 6.1; rv:45.0) Gecko/20100101 Firefox/45.0");
+user_pref("general.useragent.override",				"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36");
 //user_pref("general.appname.override",				"Netscape");
 //user_pref("general.appversion.override",			"5.0 (Windows)");
 //user_pref("general.platform.override",				"Win32");
