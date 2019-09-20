@@ -1178,6 +1178,9 @@ user_pref("font.name.serif.x-western", "Charter");
 // PREF: show your windows and tabs from last time
 user_pref("browser.startup.page", 3);
 
+// PREF: Ctrl-Tab cycles tabs in tab order
+user_pref("browser.ctrlTab.recentlyUsedOrder", false);
+
 // PREF: Sync settings
 user_pref("services.sync.client.name", "gsec");
 user_pref("services.sync.engine.addons", false);
